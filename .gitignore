@@ -1,0 +1,37 @@
+# Keil µVision Generated Files
+Objects/
+Listings/
+*.axf
+*.build_log.htm
+*.htm
+*.lnp
+*.map
+*.o
+*.d
+*.dep
+*.iex
+
+# Keil User-Specific Files
+*.uvguix.*
+*.uvoptx
+EventRecorderStub.scvd
+
+# RTE Generated Components (keep base files)
+RTE/**/RTE_Components.h
+
+# Build Outputs
+*.bin
+*.hex
+*.elf
+
+# Temporary Files
+*.tmp
+*.bak
+*~
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Log Files
+*.log
