@@ -2,6 +2,10 @@
 
 A comprehensive collection of Real-Time Operating Systems (RTOS) laboratory assignments from Ain Shams University's Computer and Systems Engineering program. This repository contains practical implementations of RTOS concepts using ARM Cortex-M4 microcontrollers (TM4C123GH6PM).
 
+---
+> [!WARNING]
+> **Academic Integrity Notice**: This repository is intended for educational purposes. Students should use it as a learning resource while adhering to their institution's academic integrity policies.
+
 ## Repository Structure
 
 ```
@@ -102,14 +106,6 @@ For improvements or bug fixes:
 2. Create a feature branch
 3. Submit a pull request with detailed description
 
-## Course Information
-
-- **University**: Ain Shams University
-- **Faculty**: Faculty of Engineering
-- **Department**: Computer and Systems Engineering
-- **Course**: Real-Time Operating Systems
-- **Target Audience**: Senior undergraduate students
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -121,6 +117,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Texas Instruments TM4C123 documentation
 - Keil development tools and examples
 
----
-
-⚠️ **Academic Integrity Notice**: This repository is intended for educational purposes. Students should use it as a learning resource while adhering to their institution's academic integrity policies.
