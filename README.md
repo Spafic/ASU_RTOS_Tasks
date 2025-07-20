@@ -29,20 +29,10 @@ ASU_RTOS_Tasks/
 
 This repository follows a structured approach to learning RTOS concepts:
 
-### Phase 1: Foundations
+### Labs Content
 - **Lab01**: Manual task switching and cooperative scheduling
-- **Lab02**: Timer-based scheduling using SysTick
-- **Lab03**: Preemptive scheduling with priorities
+- **Lab02**: Creating Task Stack for switching
 
-### Phase 2: Synchronization
-- **Lab04**: Semaphores and mutual exclusion
-- **Lab05**: Message queues and inter-task communication
-- **Lab06**: Event flags and synchronization primitives
-
-### Phase 3: Advanced Topics
-- **Lab07**: Memory management and dynamic allocation
-- **Lab08**: Device drivers and interrupt handling
-- **Lab09**: Performance analysis and optimization
 
 ## Getting Started
 
