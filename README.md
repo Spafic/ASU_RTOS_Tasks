@@ -21,9 +21,12 @@ This repository contains practical implementations of RTOS concepts using ARM Co
 
 ---
 
-> [!WARNING] > **Academic Integrity Notice**: This repository is intended for educational purposes and learning. Students should use it as a reference and study material while adhering to their institution's academic integrity policies. Direct copying is discouraged.
+> [!WARNING]
+> **Academic Integrity Notice**: This repository is intended for educational purposes. Students should use it as a learning resource while adhering to their institution's academic integrity policies.
 
-> [!NOTE] > **Getting Started**: Each lab builds upon previous concepts. It's recommended to complete labs in sequence for optimal learning progression.
+
+> [!NOTE]
+> **Getting Started**: Each lab builds upon previous concepts. It's recommended to complete labs in sequence for optimal learning progression.
 
 ## Course Progression
 
