@@ -37,6 +37,7 @@ This repository follows a structured approach to learning RTOS concepts, startin
 | [Lab02](./Lab02_Creating_Task_Stacks_for_Switching/) | Creating Task Stacks     | ARM context switching & stack management |
 | [Lab03](./Lab03_Introduction_to_FreeRtos/)           | Introduction to FreeRTOS | RTOS kernel basics & task creation       |
 | [Lab04](./Lab04_Multiple_Tasks/)                     | Multiple Tasks           | Advanced multi-tasking & synchronization |
+| [Lab06](./Lab06_Queues_in_FreeRTOS/)                 | Queues in FreeRTOS       | Inter-task communication using queues    |
 
 ## Quick Start Guide
 
