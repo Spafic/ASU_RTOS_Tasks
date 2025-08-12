@@ -36,28 +36,26 @@ This lab focuses on inter-task communication using FreeRTOS queues. You will lea
 3. Flash the program to your TM4C123 board
 4. Connect to the board via PuTTY to observe the output
 
-> [!NOTE] > **PuTTY Configuration**:
->
-> To properly view the output from this lab, you need to configure PuTTY or another terminal emulator:
->
-> 1. **Install PuTTY**: Download from [https://www.putty.org/](https://www.putty.org/) if not already installed
-> 2. **Identify COM Port**:
->    - Open Device Manager in Windows
->    - Look under "Ports (COM & LPT)"
->    - Find the entry for "Stellaris Virtual Serial Port" or similar TM4C123 entry
->    - Note the COM port number (e.g., COM3)
-> 3. **Configure PuTTY**:
->    - Connection Type: Serial
->    - Serial Line: Your COM port (e.g., COM3)
->    - Speed: 115200
->    - Data bits: 8
->    - Stop bits: 1
->    - Parity: None
->    - Flow control: None
-> 4. **Save Configuration** (optional):
->    - Enter a name in the "Saved Sessions" field
->    - Click "Save" to store this configuration for future use
-> 5. **Connect**: Click "Open" to start the serial connection
+> [!NOTE] 
+> **Serial Terminal Required**: This lab uses UART communication with a baud rate of 115200. Configure PuTTY or another terminal emulator to view the output.
+
+## PuTTY Configuration
+
+To properly view the output from this lab:
+
+1. **Install PuTTY**: Download from [https://www.putty.org/](https://www.putty.org/)
+2. **Identify COM Port**:
+   - Open Device Manager in Windows
+   - Look under "Ports (COM & LPT)"
+   - Find "Stellaris Virtual Serial Port" or similar TM4C123 entry
+   - Note the COM port number (e.g., COM3)
+3. **Configure PuTTY**:
+   - Connection Type: Serial
+   - Serial Line: Your COM port
+   - Speed: 115200
+   - Data bits: 8, Stop bits: 1, Parity: None
+   - Flow control: None
+4. **Connect**: Click "Open" to start the serial connection
 
 ## Implementation Details
 
