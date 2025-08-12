@@ -1,0 +1,121 @@
+[33mcommit 7ba829fddb4df47f86d2786a5db5a91a979d399c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Omar Mamon <109483886+Spafic@users.noreply.github.com>
+Date:   Tue Aug 12 19:38:49 2025 +0300
+
+    Update README.md
+
+[33mcommit 334017ae1f49df0f85456c5b631fd23695d8ae17[m
+Merge: ced9d8e 47ce590
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Tue Aug 12 19:34:39 2025 +0300
+
+    Merge branch 'main' of https://github.com/Spafic/ASU_RTOS_Tasks
+
+[33mcommit ced9d8e4b560a6640fac8ea9d5895b249f979dc2[m
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Tue Aug 12 19:34:27 2025 +0300
+
+    Upload lab6 files
+
+[33mcommit 47ce590f033c73721336b256cba798bfea1b54f9[m
+Author: Omar Mamon <109483886+Spafic@users.noreply.github.com>
+Date:   Wed Jul 30 15:27:29 2025 +0300
+
+    Update README.md
+
+[33mcommit 565a3f2b9581a68e9993b2d43d25299268c2ef56[m
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Wed Jul 30 15:23:09 2025 +0300
+
+    Update README.md
+
+[33mcommit 5469ed5c7177f52f2e0204903b1e59ffa2a0715f[m
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Wed Jul 30 15:01:57 2025 +0300
+
+    2-Step Renaming dir completed
+
+[33mcommit a5d24b6b602f558db44b639c55cac8067c4b0ba6[m
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Wed Jul 30 15:01:10 2025 +0300
+
+    2-Step Renaming dir
+
+[33mcommit bf79fb9424d51cfb0bff97f97d7f4106cfa5bbd7[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 10:43:18 2025 +0300
+
+    Create README.md
+
+[33mcommit 4df5f9fd0b3124778c9e05f6a40c70008065f14f[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 10:41:35 2025 +0300
+
+    Add files via upload
+
+[33mcommit 557adf3c27693b159963efebc58051a1f6394d96[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 10:40:33 2025 +0300
+
+    Delete lab03_Introduction_to_FreeRtos/temp
+
+[33mcommit 6fdae8b44f01d972bf36af307cb64351044fe20e[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 10:06:33 2025 +0300
+
+    Add files via upload
+
+[33mcommit ac937eae022a86b1ee32b8e0a5c66690dc760335[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 10:04:48 2025 +0300
+
+    Create temp
+
+[33mcommit db60b29527001ed8edf7e07db68afd58846965f4[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 09:51:56 2025 +0300
+
+    Delete lab03_Introduction_to_FreeRtos directory
+
+[33mcommit aad5bfb46482b1599a7485da1e133c468b9a6b09[m
+Author: ShahdAshraff <120820012+ShahdAshraff@users.noreply.github.com>
+Date:   Wed Jul 30 09:43:07 2025 +0300
+
+    Add files via upload
+
+[33mcommit b78c02756ac762d832fd5af6f5bc462e823a795c[m
+Author: Lucifer3224 <habibamowafy24@gmail.com>
+Date:   Sun Jul 27 13:56:48 2025 +0300
+
+    Lab04 Added
+
+[33mcommit 9592de7084551761779ec99a1c077af3d5493cb2[m
+Author: Lucifer3224 <habibamowafy24@gmail.com>
+Date:   Sun Jul 20 21:38:50 2025 +0300
+
+    Added Lab 2
+
+[33mcommit f398c4ef1a08cc08944e23d344da3922e1703d8b[m
+Author: Omar Mamon <109483886+Spafic@users.noreply.github.com>
+Date:   Sun Jul 20 19:24:42 2025 +0300
+
+    Update README.md
+
+[33mcommit c5fc670f4a27def0f4146001e58f2f7489f1e87b[m
+Author: Omar Mamon <109483886+Spafic@users.noreply.github.com>
+Date:   Sun Jul 20 19:20:51 2025 +0300
+
+    Update README.md
+
+[33mcommit b8d666bdc8d0c61415836c193e3bdfaf9de8e21e[m
+Author: Omar Mamon <omar.mamon203@gmail.com>
+Date:   Sun Jul 20 19:17:46 2025 +0300
+
+    Upload Lab1 files.
+    Initialize Repo structure.
+
+[33mcommit 15379c0f635577983c03888f8c6f76271d7869e4[m
+Author: Omar Mamon <109483886+Spafic@users.noreply.github.com>
+Date:   Sun Jul 20 18:35:13 2025 +0300
+
+    Initial commit
