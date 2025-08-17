@@ -19,11 +19,12 @@ _From Ain Shams University's Computer and Systems Engineering Program_
 
 This repository contains practical implementations of RTOS concepts using ARM Cortex-M4 microcontrollers (TM4C123GH6PM), progressing from basic manual task switching to advanced FreeRTOS implementations.
 
----
 
 > [!WARNING]
 > **Academic Integrity Notice**: This repository is intended for educational purposes. Students should use it as a learning resource while adhering to their institution's academic integrity policies.
 
+> [!DANGER]
+> **KEIL µVision FreeRTOSConfig.h Version Issue**: KEIL5 may install FreeRTOSConfig.h version 2021 by default, which can cause problems and system hangs. It is strongly recommended to use the 2019 version of FreeRTOSConfig.h for stable operation.
 
 > [!NOTE]
 > **Getting Started**: Each lab builds upon previous concepts. It's recommended to complete labs in sequence for optimal learning progression.
@@ -43,6 +44,11 @@ This repository follows a structured approach to learning RTOS concepts, startin
 | [Lab05](./Lab05_Adding_Multiple_Tasks/)              | Adding Multiple Tasks    | Task management & scheduling techniques   |
 | [Lab06](./Lab06_Queues_in_FreeRTOS/)                 | Queues in FreeRTOS       | Inter-task communication using queues    |
 
+| [Lab07](./Lab07_Semaphores_in_FreeRtos/)            | Semaphores in FreeRTOS   | Task synchronization & resource management |
+
+### Unupdated Labs
+
+Some labs may not have full documentation or updated instructions yet. If you encounter missing details, refer to the code and comments within each lab folder. Contributions to improve documentation are welcome!
 ## Quick Start Guide
 
 ### Prerequisites
