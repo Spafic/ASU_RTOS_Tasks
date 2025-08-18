@@ -218,4 +218,9 @@ This permissive license allows for educational use, modification, and distributi
 
 ---
 
-**Last Updated**: July 2025 | **Maintained by**: ASU CSE Students and Faculty
+Last Updated: August 2025 | Maintained by: 
+[Spafic](https://github.com/Spafic), 
+[Lucifer3224](https://github.com/Lucifer3224), 
+[ShahdAshraff](https://github.com/ShahdAshraff)
+
+
