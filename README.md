@@ -43,6 +43,7 @@ This repository follows a structured approach to learning RTOS concepts, startin
 | [Lab05](./Lab05_Adding_Multiple_Tasks/)              | Adding Multiple Tasks    | Task management & scheduling techniques   |
 | [Lab06](./Lab06_Queues_in_FreeRTOS/)                 | Queues in FreeRTOS       | Inter-task communication using queues    |
 | [Lab07](./Lab07_Semaphores_in_FreeRtos/)            | Semaphores in FreeRTOS   | Task synchronization & resource management |
+| [Lab08](./Lab08_Mutex_in_FreeRTOS/)                 | Mutex in FreeRTOS        | Mutual exclusion & priority inheritance   |
 
 ### Unupdated Labs
 
