@@ -37,7 +37,8 @@ This lab introduces mutexes (mutual exclusion objects) in FreeRTOS for protectin
 3. Flash the program to your TM4C123 board
 4. Connect to the board via PuTTY to observe the output
 
-> [!NOTE] > **Serial Terminal Required**: This lab uses UART communication with a baud rate of 115200. Configure PuTTY or another terminal emulator to view the output.
+> [!NOTE]
+> **Serial Terminal Required**: This lab uses UART communication with a baud rate of 115200. Configure PuTTY or another terminal emulator to view the output.
 
 ## PuTTY Configuration
 
