@@ -210,13 +210,12 @@ This permissive license allows for educational use, modification, and distributi
 
 ## Acknowledgments
 
-- **Course instructors and TAs** at ASU Computer and Systems Engineering Department
+- **Course instructors and TAs** at ASU Computer and Systems Engineering Department ([Shahd-AbouHashem](https://github.com/Shahd-AbouHashem))
 - **ARM and Texas Instruments** for comprehensive documentation and development tools
 - **FreeRTOS community** for excellent RTOS implementation and educational resources
 - **Keil/ARM** for providing industry-standard development tools
 - **Student contributors** who have helped improve and test these implementations
 
----
 
 Last Updated: August 2025 | Maintained by: 
 [Spafic](https://github.com/Spafic), 
