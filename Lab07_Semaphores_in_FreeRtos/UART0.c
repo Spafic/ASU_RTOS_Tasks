@@ -2,7 +2,7 @@
 
 #define ClkDiv 16
 
-extern uint32_t SystemCoreClock;
+extern uint32_t SystemCoreClock ;
 
 void UART0_Init(void){
 	//Enable UART0 and GPIOA clock
@@ -22,16 +22,17 @@ void UART0_Init(void){
 }
 
 void UART0_Settings(unsigned int BaudRate){
-	UART0_CC_R &= ~(1 << 0); //Disable UART for configrations
-	UART0_CC_R = 0;  //Use System clock
-	int intPart = SystemCoreClock / (ClkDiv * BaudRate);
-	int fracPart = ((SystemCoreClock / (ClkDiv * BaudRate)) * 64 + (ClkDiv * BaudRate) /2) / (ClkDiv * BaudRate);
-	
-	UART0_IBRD_R =intPart;
-	UART0_FBRD_R = fracPart;
-	
-	UART0_LCRH_R = 0x70;  //8 bits, no piriority, 1 stopbit, FIFO enabled
-	UART0_CTL_R |= (1 << 0) | (1 << 8) | (1 << 9); //Enable: UART, TX, RX
+	UART0_CTL_R &= ~(1 << 0); //Disable UART for configurations
+	UART0_CC_R = 0; //Use System clock
+	// Calculate integer and fractional parts of the baud rate divisor
+	int baudDivisor = SystemCoreClock / (ClkDiv * BaudRate);
+	float fractionalPart = (float) (SystemCoreClock % (ClkDiv * BaudRate)) / (ClkDiv * BaudRate);
+
+	UART0_IBRD_R = baudDivisor; // Integer part of the divisor
+	UART0_FBRD_R = (int) ((fractionalPart * 64) + 0.5); // Fractional part of the divisor (rounded)
+
+	UART0_LCRH_R = 0x00000060;
+	UART0_CTL_R |= (1 << 0);
 }
 
 void UART0_Interrupt(unsigned int flag){
