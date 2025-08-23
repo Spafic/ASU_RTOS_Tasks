@@ -1,4 +1,3 @@
-```markdown
 # Priority Inheritance Demo: Debugging and Simulation Guide
 
 ## Overview
@@ -141,8 +140,8 @@ High Priority Task: Released Mutex1
 High Priority Task: Released Mutex2
 ```
 
-> **Note about Corrupted Output**
-> You may see corrupted lines like `Low Priority High PrioriTask: Releasty Task: Aced Mutex2`. This is normal and happens when both tasks attempt to write to UART simultaneously. The actual task execution is still correct - it's just the debug output that gets mixed up. This is a common issue in multitasking systems when the UART driver isn't protected by a mutex.
+> [!NOTE]
+> You may see corrupted lines like Low Priority High PrioriTask: Releasty Task: Aced Mutex2. This is normal and happens when both tasks attempt to write to UART simultaneously. The actual task execution is still correct - it's just the debug output that gets mixed up. This is a common issue in multitasking systems when the UART driver isn't protected by a mutex.
 
 ### Visual Indicators
 
@@ -276,5 +275,3 @@ void HighPriorityTask_Print(const char *msg) {
 ```
 
 These improvements will make the output easier to follow and will explicitly show the priority changes, but they're not necessary for the core demonstration of priority inheritance.
-
-```
