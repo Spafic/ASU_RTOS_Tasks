@@ -1,122 +1,64 @@
-# Lab 08: Mutex in FreeRTOS
+```markdown
+# Lab 08 — Mutexes and Priority Inheritance (FreeRTOS)
 
 ## Overview
 
-This lab introduces mutexes (mutual exclusion objects) in FreeRTOS for protecting shared resources and preventing priority inversion. You will learn how to use mutexes to ensure thread-safe access to shared resources and understand the differences between mutexes and binary semaphores.
+This folder contains lab material that demonstrates use of mutexes in FreeRTOS and how mutexes (with priority inheritance) prevent priority inversion and deadlocks on the TM4C123GH6PM board.
+
+There are two example tasks/implementations in this lab:
+- `Task1/` — baseline examples and notes (has its own README)
+- `Task2/` — complete priority-inheritance demo with button-driven deadlock scenario (documented in `Task2/README.md` and `Task2/priority_inheritance_demo.md`)
 
 ## Objectives
 
-- Understand the concept of mutexes in real-time operating systems
-- Implement mutex-based resource protection in FreeRTOS
-- Learn about priority inheritance and priority inversion
-- Compare mutexes with binary semaphores
-- Use UART for output and debugging
+- Learn how to create and use mutexes in FreeRTOS (`xSemaphoreCreateMutex`, `xSemaphoreTake`, `xSemaphoreGive`).
+- Observe priority inheritance when a high-priority task blocks on a mutex held by a low-priority task.
+- Practice debugging concurrent issues using the debugger (watch variables) and UART output.
 
-## Hardware Requirements
+## Hardware / Software
 
-- TM4C123GH6PM LaunchPad Evaluation Kit
-- USB cable for programming and serial communication
-- Optional: External LEDs for visual feedback
+- Hardware: TM4C123GH6PM (Tiva C LaunchPad)
+- IDE: Keil µVision 5
+- Serial terminal: PuTTY, Tera Term, or similar (115200, 8N1)
 
-## Software Requirements
+## Quick start (Keil)
 
-- Keil µVision IDE
-- PuTTY or similar terminal emulator for serial communication
+1. Open `lab8.uvprojx` in the task folder you want to run (`Task1/` or `Task2/`).
+2. Build the project (F7).
+3. Download/flash to the TM4C123 board.
+4. Open a serial terminal at 115200 baud to view UART output.
 
-## Project Structure
+Notes: Each task folder contains its own `lab8.uvprojx`. Use the project matching the example you want to run.
 
-- `main.c`: Main application code with mutex implementations
-- `portf.c/h`: GPIO Port F driver for buttons and LEDs
-- `UART0.c/h`: UART driver for serial communication
-- `tm4c123gh6pm.h`: TM4C123 hardware definitions
+## Where to look in this folder
 
-## Getting Started
+- `Task1/` — introductory examples and `README.md` (already present).
+- `Task2/` — priority inheritance demo:
+  - `main.c` — creates tasks, mutexes, semaphores and a UART mutex.
+  - `portf.c` / `portf.h` — button & LED initialization and ISR.
+  - `UART0.c` / `UART0.h` — UART helper used for debug output.
+  - `priority_inheritance_demo.md` — detailed debugging & simulation guide.
+  - `lab8.uvprojx` — Keil project file for Task2.
 
-1. Open the `lab8.uvprojx` file in Keil µVision
-2. Build the project using F7 or the Build button
-3. Flash the program to your TM4C123 board
-4. Connect to the board via PuTTY to observe the output
+## Useful pointers
 
-> [!NOTE]
-> **Serial Terminal Required**: This lab uses UART communication with a baud rate of 115200. Configure PuTTY or another terminal emulator to view the output.
-
-## PuTTY Configuration
-
-To properly view the output from this lab:
-
-1. **Install PuTTY**: Download from [https://www.putty.org/](https://www.putty.org/)
-2. **Identify COM Port**:
-   - Open Device Manager in Windows
-   - Look under "Ports (COM & LPT)"
-   - Find "Stellaris Virtual Serial Port" or similar TM4C123 entry
-   - Note the COM port number (e.g., COM3)
-3. **Configure PuTTY**:
-   - Connection Type: Serial
-   - Serial Line: Your COM port
-   - Speed: 115200
-   - Data bits: 8, Stop bits: 1, Parity: None
-   - Flow control: None
-4. **Connect**: Click "Open" to start the serial connection
-
-## Implementation Details
-
-This lab demonstrates:
-
-1. Creating mutexes using `xSemaphoreCreateMutex()`
-2. Protecting shared resources with `xSemaphoreTake()` and `xSemaphoreGive()`
-3. Understanding priority inheritance mechanisms
-4. Comparing mutex behavior with binary semaphores
-5. Demonstrating priority inversion scenarios and their solutions
-
-## Expected Behavior
-
-- Tasks access shared resources safely using mutexes
-- Priority inheritance prevents priority inversion
-- UART output shows mutex operations and task synchronization
-- Visual feedback through LEDs (if implemented)
-
-## Key Concepts
-
-### Mutex vs Binary Semaphore
-
-- **Mutex**: Ownership-based, supports priority inheritance, used for mutual exclusion
-- **Binary Semaphore**: Count-based, no ownership concept, used for signaling
-
-### Priority Inheritance
-
-- Automatically elevates the priority of a task holding a mutex when a higher-priority task waits for it
-- Prevents unbounded priority inversion scenarios
+- The demo uses two mutexes `Mutex1` and `Mutex2`, a binary semaphore for the button, and a `UARTMutex` to serialize console output.
+- LEDs on Port F are used as visual indicators:
+  - PF1 (Red): HighPriorityTask running
+  - PF2 (Blue): Deadlock resolved (brief flash)
+- To enable/verify priority inheritance, ensure your `FreeRTOSConfig.h` has priority inheritance enabled (see `priority_inheritance_demo.md`).
 
 ## Troubleshooting
 
-- **No Serial Output**:
+- If you see no UART output, confirm COM port in Device Manager and PuTTY settings (115200, 8N1, no flow control).
+- If the program appears stuck, use the debugger and watch `LowPriorityTaskHandle->uxPriority`, `HighPriorityTaskHandle->eCurrentState`, and the mutex holder fields to inspect priority inheritance and ownership.
 
-  - Verify COM port selection and baud rate (115200)
-  - Check UART connections and initialization in code
-  - Ensure PuTTY is configured correctly
+---
 
-- **Mutex Issues**:
-
-  - Verify mutex creation before use
-  - Ensure proper take/give pairing
-  - Check for deadlock scenarios
-
-- **Priority Inversion**:
-  - Use mutexes instead of binary semaphores for resource protection
-  - Verify priority inheritance is working correctly
-
-## Extending the Lab
-
-Try these extensions to deepen your understanding:
-
-1. Implement multiple mutexes protecting different resources
-2. Create scenarios demonstrating priority inversion and its resolution
-3. Compare performance between mutex and binary semaphore approaches
-4. Add recursive mutex functionality for nested critical sections
+See the `Task2/README.md` for a concise Task2-specific guide and `Task2/priority_inheritance_demo.md` for an extended debugging walkthrough.
 
 ## References
 
-- [FreeRTOS Mutex Documentation](https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html)
-- [Priority Inheritance in FreeRTOS](https://www.freertos.org/RTOS-priority-inheritance.html)
-- [TM4C123 Datasheet](https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf)
-- [Real-Time Systems Priority Inversion](https://en.wikipedia.org/wiki/Priority_inversion)
+- FreeRTOS mutex docs: https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html
+- Priority inheritance: https://www.freertos.org/RTOS-priority-inheritance.html
+```
