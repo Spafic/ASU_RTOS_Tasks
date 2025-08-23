@@ -2,16 +2,17 @@
 
 <div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform](https://img.shields.io/badge/platform-ARM%20Cortex--M4-green.svg)
-![IDE](https://img.shields.io/badge/IDE-Keil%20µVision-orange.svg)
-![FreeRTOS](https://img.shields.io/badge/FreeRTOS-v11.2.0-red.svg)
-![University](https://img.shields.io/badge/University-ASU-purple.svg)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-ARM%20Cortex--M4-0b8f84?style=flat-square)
+![IDE](https://img.shields.io/badge/IDE-Keil%20%C2%B5Vision-ffb86b?style=flat-square)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-v11.2.0-e55347?style=flat-square)
+![University](https://img.shields.io/badge/University-ASU-6f42c1?style=flat-square)
+[![Stars](https://img.shields.io/github/stars/Spafic/ASU_RTOS_Tasks?style=flat-square)](https://github.com/Spafic/ASU_RTOS_Tasks/stargazers)
 
 **A comprehensive collection of Real-Time Operating Systems (RTOS) laboratory assignments**  
 _From Ain Shams University's Computer and Systems Engineering Program_
 
-🎯 **Progressive Learning** • 🔧 **Hands-On Experience** • 📚 **Educational Focus**
+Progressive Learning • Hands‑On Experience • Educational Focus
 
 </div>
 
@@ -40,14 +41,15 @@ This repository follows a structured approach to learning RTOS concepts, startin
 | [Lab02](./Lab02_Creating_Task_Stacks_for_Switching/) | Creating Task Stacks     | ARM context switching & stack management |
 | [Lab03](./Lab03_Introduction_to_FreeRtos/)           | Introduction to FreeRTOS | RTOS kernel basics & task creation       |
 | [Lab04](./Lab04_Multiple_Tasks/)                     | Multiple Tasks           | Advanced multi-tasking & synchronization |
-| [Lab05](./Lab05_Adding_Multiple_Tasks/)              | Adding Multiple Tasks    | Task management & scheduling techniques   |
+| [Lab05](./Lab05_Adding_Multiple_Tasks/)              | Adding Multiple Tasks    | Task management & scheduling techniques  |
 | [Lab06](./Lab06_Queues_in_FreeRTOS/)                 | Queues in FreeRTOS       | Inter-task communication using queues    |
-| [Lab07](./Lab07_Semaphores_in_FreeRtos/)            | Semaphores in FreeRTOS   | Task synchronization & resource management |
-| [Lab08](./Lab08_Mutex_in_FreeRTOS/)                 | Mutex in FreeRTOS        | Mutual exclusion & priority inheritance   |
+| [Lab07](./Lab07_Semaphores_in_FreeRtos/)             | Semaphores in FreeRTOS   | Task synchronization & resource management |
+| [Lab08](./Lab08_Mutex_in_FreeRTOS/)                  | Mutex in FreeRTOS        | Mutual exclusion & priority inheritance  |
 
 ### Unupdated Labs
 
 Some labs may not have full documentation or updated instructions yet. If you encounter missing details, refer to the code and comments within each lab folder. Contributions to improve documentation are welcome!
+
 ## Quick Start Guide
 
 ### Prerequisites
@@ -57,14 +59,14 @@ Some labs may not have full documentation or updated instructions yet. If you en
 
 1. **Development Environment**:
 
-   - Install Keil µVision MDK-ARM or Code Composer Studio
-   - Download TM4C123 device support pack
-   - Install Windows drivers for TM4C123 LaunchPad
+    - Install Keil µVision MDK-ARM or Code Composer Studio
+    - Download TM4C123 device support pack
+    - Install Windows drivers for TM4C123 LaunchPad
 
 2. **Hardware Setup**:
-   - Connect LaunchPad via USB
-   - Verify device recognition in Device Manager
-   - Test with basic LED blink program
+    - Connect LaunchPad via USB
+    - Verify device recognition in Device Manager
+    - Test with basic LED blink program
 
 </details>
 
@@ -79,12 +81,12 @@ cd ASU_RTOS_Tasks
 cd Lab01_Manual_Tasks_Switch
 ```
 
-**Then:** Open `.uvprojx` → Build (F7) → Flash & Debug (Ctrl+F5) → Verify LED behavior
+Open `.uvprojx` → Build (F7) → Flash & Debug (Ctrl+F5) → Verify LED behavior
 
 ### Repository Guidelines
 
-- Each lab is self-contained with own project files
-- Build artifacts automatically ignored by Git
+- Each lab is self-contained with its own project files
+- Build artifacts are ignored by Git
 - Follow coding standards from Lab01
 - Refer to `docs/` for detailed requirements
 
@@ -156,10 +158,10 @@ This course provides a structured path through embedded systems and RTOS concept
 
 ### Debug Tips
 
-- Use **breakpoints strategically** to understand program flow
-- Monitor **register values** to verify hardware configuration
-- Utilize **memory windows** to inspect stack and variable contents
-- Enable **serial output** for runtime debugging information
+- Use breakpoints strategically to understand program flow
+- Monitor register values to verify hardware configuration
+- Utilize memory windows to inspect stack and variable contents
+- Enable serial output for runtime debugging information
 
 ## Contributing and Academic Use
 
@@ -216,10 +218,5 @@ This permissive license allows for educational use, modification, and distributi
 - **Keil/ARM** for providing industry-standard development tools
 - **Student contributors** who have helped improve and test these implementations
 
-
-Last Updated: August 2025 | Maintained by: 
-[Spafic](https://github.com/Spafic), 
-[Lucifer3224](https://github.com/Lucifer3224), 
-[ShahdAshraff](https://github.com/ShahdAshraff)
-
-
+Last Updated: August 2025 | Maintained by:  
+[Spafic](https://github.com/Spafic), [Lucifer3224](https://github.com/Lucifer3224), [ShahdAshraff](https://github.com/ShahdAshraff)
