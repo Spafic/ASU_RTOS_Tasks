@@ -1,4 +1,3 @@
-```markdown
 # Task2 — Priority Inheritance Demo (concise)
 
 This README summarizes the purpose and how to run/debug the `Task2` demo that demonstrates FreeRTOS priority inheritance using two mutexes and a button-triggered scenario.
@@ -67,4 +66,4 @@ With priority inheritance enabled, when the HighPriorityTask blocks on `Mutex1`,
 ---
 
 For a full debugging walkthrough with breakpoints and watch variable suggestions, see `priority_inheritance_demo.md` in this folder.
-```
+
