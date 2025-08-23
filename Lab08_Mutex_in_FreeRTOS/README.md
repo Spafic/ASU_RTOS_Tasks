@@ -1,4 +1,3 @@
-```markdown
 # Lab 08 — Mutexes and Priority Inheritance (FreeRTOS)
 
 ## Overview
@@ -61,4 +60,3 @@ See the `Task2/README.md` for a concise Task2-specific guide and `Task2/priority
 
 - FreeRTOS mutex docs: https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html
 - Priority inheritance: https://www.freertos.org/RTOS-priority-inheritance.html
-```
