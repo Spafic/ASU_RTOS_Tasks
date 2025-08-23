@@ -7,7 +7,7 @@
 ![IDE](https://img.shields.io/badge/IDE-Keil%20%C2%B5Vision-ffb86b?style=flat-square)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-v11.2.0-e55347?style=flat-square)
 ![University](https://img.shields.io/badge/University-ASU-6f42c1?style=flat-square)
-[![Stars](https://img.shields.io/github/stars/Spafic/ASU_RTOS_Tasks?style=flat-square)](https://github.com/Spafic/ASU_RTOS_Tasks/stargazers)
+[![Stars](https://img.shields.io/github/stars/Spafic/ASU_RTOS_Tasks?style=social)](https://github.com/Spafic/ASU_RTOS_Tasks/stargazers)
 
 **A comprehensive collection of Real-Time Operating Systems (RTOS) laboratory assignments**  
 _From Ain Shams University's Computer and Systems Engineering Program_
